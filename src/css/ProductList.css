@@ -1,0 +1,132 @@
+.product-list-container {
+    width:80%;
+    margin: 5rem auto;
+    min-height: 29rem;
+}
+
+.title-h3{
+   color: #c79818;
+}
+
+.product-card {
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 90%;
+    height: 12rem;
+    border-radius: 5px;
+    margin:auto;
+}
+
+.price{
+   color: #c79818;
+   font-weight: 500;
+}
+
+.name{
+   font-size: 1rem;
+   color: #092870;
+   text-transform:capitalize;
+   font-weight: 450;
+}
+
+.more{
+    text-align: center;
+    color: rgb(12, 87, 158);
+    font-style: italic;
+    margin-top: -1rem;
+ }
+
+ .more:hover{
+    color: rgb(55, 148, 235);
+    cursor: pointer;
+ }
+
+.buy-button {
+    color: #092870;
+    border: 1px solid #092870;
+    transition: background-color 0.3s, color 0.3s;
+    width: 40%;
+    padding: 0.3rem;
+}
+
+.buy-button:hover {
+    background-color: rgb(12, 87, 158);
+    color: white;
+}
+
+.add-to-cart-button{
+     font-size: 1.5rem;
+     color:#092870;
+     width: 25%;
+}
+
+.add-to-cart-button:hover{
+     color:rgb(12, 87, 158);
+     background-color: white;
+}
+
+.btn-close:hover {
+    background-color: blue;
+}
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative; 
+    width: 400px; 
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: black; 
+}
+
+
+.popup-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #092870;
+    text-align:center;
+}
+
+.popup-description {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+    text-align:jusify;
+}
+
+.popup-price {
+    font-size: 18px;
+    color: #CC9900;
+    margin: 10px 0;
+    text-align:center;
+}
+
+
