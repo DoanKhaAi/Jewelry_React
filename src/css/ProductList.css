@@ -19,7 +19,7 @@
 
 .product-card img {
     max-width: 90%;
-    height: 12rem;
+    height: 11rem;
     border-radius: 5px;
     margin:auto;
 }
@@ -34,6 +34,7 @@
    color: #092870;
    text-transform:capitalize;
    font-weight: 450;
+   margin-top: -1rem;
 }
 
 .more{
@@ -43,10 +44,15 @@
     margin-top: -1rem;
  }
 
+
  .more:hover{
     color: rgb(55, 148, 235);
     cursor: pointer;
  }
+
+ .more p{
+    margin-bottom: 0;
+}
 
 .buy-button {
     color: #092870;
@@ -94,7 +100,7 @@
     padding: 20px;
     border-radius: 5px;
     position: relative; 
-    width: 400px; 
+    width: 500px; 
 }
 
 .btn-close {
@@ -128,5 +134,59 @@
     margin: 10px 0;
     text-align:center;
 }
+.pagination{
+    margin: auto;
+    width: fit-content;
+}
+
+.pagination button{
+    width: 2rem;
+    margin-left: 0.5rem;
+    padding: auto;
+    background-color: white;
+    border: solid 1px #092870;
+    color: #092870;
+}
+.page-button:disabled {
+    color: #807c7c; 
+    cursor: not-allowed; 
+}
+
+.page-button.active {
+    background-color: #092870;
+    color: white;
+}
+
+.pagination button.page-icon{
+    border: solid 1px #ffffff;
+    margin: 0 0.2rem;
+    padding-right: 2rem;
+    font-weight: bold;
+}
+
+.pagination button.page-icon:hover{
+    background-color: white;
+    color: #81a1ee;
+}
+
+.type-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.type-container .type img{
+    border-radius: 10%;
+    width: 13rem;
+    height: 4rem;
+}
+
+.type-container .type p{
+    color: #092870;
+}
+
+
+
 
 

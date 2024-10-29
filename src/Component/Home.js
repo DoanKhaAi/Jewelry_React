@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Slider from './Slider';
 import News from './News';
+import Chatbot from './Chatbot';
 
 const Home = () => {
   const [news, setNews] = useState([]);
@@ -29,6 +30,8 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      <Chatbot />
     </div>
   );
 };

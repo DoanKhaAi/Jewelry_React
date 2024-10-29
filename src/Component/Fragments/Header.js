@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../../css/Header.css';
 import { Link, useNavigate } from 'react-router-dom';
+import logo from '../../images/logo1.png';
 
 const Header = () => {
     const [username, setUsername] = useState('');
@@ -40,7 +41,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="logo">
-                {/* <img src={logo} alt="Logo" /> */}
+                 <img src={logo} alt="Logo"/>KAJ<span>Sự gắn bó bền chặt</span>
             </div>
             <nav className="nav-links">
                 <Link to="/" className="nav-link">Trang chủ</Link>

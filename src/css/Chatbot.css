@@ -1,0 +1,100 @@
+
+:root {
+    --chat-color: #092870;
+    --user-color: rgb(214, 212, 212);
+}
+
+#chatbot-container {
+    display: block;
+    position: fixed;
+    bottom: 70px;
+    right: 50px;
+    width: 19rem;
+    height: 25rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+#chatbot-header {
+    background-color: var(--chat-color);
+    color: var(--user-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+#chatbot-header i{
+    font-size:2.5rem;
+}
+
+#chatBox {
+    height: 74%;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    background-color: var(--chat-color);
+    color: var(--user-color);
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#userMessage {
+    width: 78%;
+    padding: 0.5rem;
+    border: 1px solid var(--user-color);
+    border-radius: 5px;
+    margin-left: 1%;
+}
+
+#sendBtn {
+    width: 18%;
+    padding: 0.5rem;
+    background-color: var(--chat-color);
+    color: var(--user-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.message.user {
+    background-color: var(--user-color);
+    margin-left: auto;
+    color: var(--chat-color);
+}
+
+.message.bot {
+    background-color: var(--chat-color);
+    margin-right: auto;
+    text-align: left;
+    color: var(--user-color);
+}
+
+.message.user, .message.bot {
+    width: fit-content;
+    max-width: 80%;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+    word-wrap: break-word;
+    font-size: 1rem;
+}
