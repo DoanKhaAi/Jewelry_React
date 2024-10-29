@@ -14,6 +14,9 @@ const Header = () => {
     //     } 
     // }, []);
 
+
+    //Chỗ này em chưa xử lý được việc đổi thanh navbar khi đăng nhập thành công
+    //Nên chỗ này em kiểm tra sự thay đổi tên người dùng lưu trong localStorage trong từng giây đêr cập nhật
     useEffect(() => {
         const storedUsername = localStorage.getItem('username');
         if (storedUsername) {

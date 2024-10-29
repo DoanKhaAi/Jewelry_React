@@ -4,6 +4,7 @@ import '../css/Cart.css';
 const Cart = () => {
   const [cart, setCart] = useState(null);
 
+  //Em Lấy thông tin người dùng từ loaclStorage để gọi API lấy thông tin giỏ hàng
   useEffect(() => {
     const username = localStorage.getItem('username');
     fetch(`/api/cart/${username}`)
@@ -12,7 +13,7 @@ const Cart = () => {
       .catch(error => console.error('Error fetching cart data:', error));
   }, []);
 
-  //-----------------------------------------------------------------------------------------------------
+  //Giảm số lượng sản phẩm trong giỏ hàng (Nhấn vào dấu trừ trong cột số lượng)-----------------------------------------------------------------------------------------------------
   const handleRemoveProduct = (productId) => {
     const username = localStorage.getItem('username');
     const itemToUpdate = cart.items.find(item => item.product.productID === productId);
@@ -51,7 +52,7 @@ const Cart = () => {
       .catch(error => console.error('Error removing product from cart:', error));
   };
   
-  //------------------------------------------------------------------------------------------------------
+  //Thêm sản phẩm vào giỏ hàng------------------------------------------------------------------------------------------------------
 
   const handleAddToCart = (productId) => {
     const username = localStorage.getItem('username');
@@ -77,7 +78,7 @@ const Cart = () => {
   };
   
 
-  //--------------------------------------------------------------------------------------------------------
+  //Loại bỏ mặt hàng này trong giỏ hàng--------------------------------------------------------------------------------------------------------
   const handleDeleteFromCart = (productId) => {
     const username = localStorage.getItem('username');
 

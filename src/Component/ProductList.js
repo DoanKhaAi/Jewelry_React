@@ -171,6 +171,7 @@ const ProductList = () => {
                 )}
             </div>
 
+            
             {isPopupOpen && selectedProduct && (
                 <div className="popup-overlay">
                     <div className="popup-content">
